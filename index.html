@@ -3,192 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celimpilo Gumede - Portfolio</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
-        
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        
-        .header h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .header .title { font-size: 1.5rem; opacity: 0.9; }
-        .header .location { margin-top: 1rem; opacity: 0.8; }
-        
-        /* Sections */
-        .section {
-            max-width: 1000px;
-            margin: 3rem auto;
-            padding: 0 2rem;
-        }
-        
-        .section h2 {
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        /* Projects */
-        .project {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-left: 5px solid #667eea;
-        }
-        
-        .project h3 { color: #333; margin-bottom: 1rem; }
-        .tech-badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Contact */
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .contact-btn {
-            background: #667eea;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .contact-btn:hover {
-            background: #5a67d8;
-        }
-        
-        /* Footer */
-        .footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2rem; }
-            .contact-links { flex-direction: column; }
-        }
-    </style>
+    <title>Celimpilo Gumede | Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <h1>Celimpilo Gumede</h1>
-        <div class="title">Data Engineer | Cloud AI Developer | Mathematics Graduate</div>
-        <div class="location">📍 Johannesburg, South Africa</div>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">CG</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Celimpilo Gumede</h1>
+                <h2 class="hero-subtitle">Data Engineer | Cloud AI Developer | Mathematics Graduate</h2>
+                <p class="brand-statement">
+                    "Transforming mathematical models into production-grade data solutions. 
+                    Building scalable systems that bridge AI innovation with cloud infrastructure."
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <!-- Optional: Add headshot here -->
+            <!-- <div class="hero-image">
+                <img src="images/headshot.jpg" alt="Celimpilo Gumede" class="profile-photo">
+            </div> -->
+        </div>
+    </section>
 
     <!-- About Me -->
-    <section class="section">
-        <h2>👨‍💻 About Me</h2>
-        <p>I'm a recent BSc Mathematics graduate from the University of KwaZulu-Natal, specializing in Applied Mathematics. I transform complex problems into functional, data-driven systems using Python, AWS/Azure, and modern DevOps tools.</p>
-    </section>
-
-    <!-- Skills -->
-    <section class="section">
-        <h2>🛠️ Technical Skills</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Java</span>
-            <span class="tech-badge">Node.js</span>
-            <span class="tech-badge">AWS</span>
-            <span class="tech-badge">Azure</span>
-            <span class="tech-badge">Docker</span>
-            <span class="tech-badge">PostgreSQL</span>
-            <span class="tech-badge">MongoDB</span>
-            <span class="tech-badge">TensorFlow</span>
-            <span class="tech-badge">Git</span>
-            <span class="tech-badge">Power Apps</span>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section">
-        <h2>🚀 Featured Projects</h2>
-        
-        <div class="project">
-            <h3>🏥 MediScan AI – AI-Powered Symptom Checker</h3>
-            <p>Containerized web app that uses AI to analyze symptoms and provide triage recommendations.</p>
-            <div style="margin: 1rem 0;">
-                <span class="tech-badge">Node.js</span>
-                <span class="tech-badge">JavaScript</span>
-                <span class="tech-badge">Docker</span>
-                <span class="tech-badge">AI APIs</span>
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a <strong>recent BSc Mathematics graduate</strong> from the University of KwaZulu-Natal, with specializations in Applied Mathematics and Mathematics. My journey combines <strong>mathematical rigor</strong> with practical engineering to solve complex data challenges.</p>
+                    
+                    <h3>🎯 Career Goals</h3>
+                    <p>Seeking <strong>Machine Learning Engineering, Data Engineering, or Cloud DevOps</strong> roles where I can contribute to impactful projects, grow under mentorship, and help build the future of data-driven decision making.</p>
+                    
+                    <h3>🏆 Strengths</h3>
+                    <ul class="strengths-list">
+                        <li><i class="fas fa-brain"></i> <strong>Analytical Problem-Solving</strong> – Mathematical approach to complex challenges</li>
+                        <li><i class="fas fa-bolt"></i> <strong>Quick Learning</strong> – Rapid adaptation to new technologies</li>
+                        <li><i class="fas fa-users"></i> <strong>Collaborative Mindset</strong> – Effective team player and communicator</li>
+                        <li><i class="fas fa-rocket"></i> <strong>End-to-End Project Execution</strong> – From concept to deployment</li>
+                    </ul>
+                </div>
+                
+                <div class="certifications">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-card">
+                        <div class="cert-badge gold">🥇</div>
+                        <div class="cert-info">
+                            <h4>Data Engineering Mastery</h4>
+                            <p>92% (46/50) • December 2025</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-badge silver">🥈</div>
+                        <div class="cert-info">
+                            <h4>Cloud & DevOps Engineering</h4>
+                            <p>78% (39/50) • December 2025</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-badge bronze">🥉</div>
+                        <div class="cert-info">
+                            <h4>Foundations of AI</h4>
+                            <p>74% (37/50) • December 2025</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/MpiloG29/MediScan-AI" class="contact-btn" style="display: inline-block; margin-top: 1rem;">View on GitHub</a>
-        </div>
-
-        <div class="project">
-            <h3>📊 Smart Data Manager – Perfume Analytics</h3>
-            <p>Data cleaning, analysis, and visualization pipeline for perfume sales dataset.</p>
-            <div style="margin: 1rem 0;">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Pandas</span>
-                <span class="tech-badge">SQLite</span>
-                <span class="tech-badge">Jupyter</span>
-            </div>
-            <a href="https://github.com/MpiloG29/Lula-App" class="contact-btn" style="display: inline-block; margin-top: 1rem;">View on GitHub</a>
-        </div>
-
-        <div class="project">
-            <h3>☁️ Multi-Cloud AI Assistant Portfolio</h3>
-            <p>Backend for AI portfolio app deployed across AWS and Azure.</p>
-            <div style="margin: 1rem 0;">
-                <span class="tech-badge">Node.js</span>
-                <span class="tech-badge">AWS</span>
-                <span class="tech-badge">Azure</span>
-                <span class="tech-badge">AI APIs</span>
-            </div>
-            <a href="https://github.com/MpiloG29/multi-cloud-app-development" class="contact-btn" style="display: inline-block; margin-top: 1rem;">View on GitHub</a>
         </div>
     </section>
 
-    <!-- Certifications -->
-    <section class="section">
-        <h2>📜 Certifications</h2>
-        <ul style="list-style: none; padding-left: 1rem;">
-            <li>✅ <strong>Data Engineering Mastery</strong> – 92% (Dec 2025)</li>
-            <li>✅ <strong>Cloud & DevOps Engineering</strong> – 78% (Dec 2025)</li>
-            <li>✅ <strong>Foundations of AI</strong> – 74% (Dec 2025)</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">AI APIs</span>
+                        <span class="skill-tag">LLM Integration</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitLab CI</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-magic"></i> Low-Code Solutions</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power Apps</span>
+                        <span class="skill-tag">Power Automate</span>
+                        <span class="skill-tag">SharePoint</span>
+                        <span class="skill-tag">Business Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section">
-        <h2>📬 Contact Me</h2>
-        <div class="contact-links">
-            <a href="mailto:celimpilog200@gmail.com" class="contact-btn">📧 Email</a>
-            <a href="https://github.com/MpiloG29" class="contact-btn">🐙 GitHub</a>
-            <a href="https://www.linkedin.com/in/celimpilo-gumede-b5540522b" class="contact-btn">💼 LinkedIn</a>
+    <!-- Projects Portfolio -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-project-diagram"></i> Project Portfolio</h2>
+            <p class="section-subtitle">End-to-end projects showcasing cloud, AI, data engineering, and DevOps skills</p>
+            
+            <!-- Capstone Project -->
+            <div class="project-card featured">
+                <div class="project-badge">🌟 Capstone Project</div>
+                <div class="project-content">
+                    <div class="project-image">
+                        <!-- Add screenshot: images/mediscan-screenshot.png -->
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-medical"></i>
+                            <p>MediScan AI Interface</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>🏥 MediScan AI – AI-Powered Symptom Checker</h3>
+                        <p class="project-description">
+                            <strong>What I Built:</strong> A containerized web application that uses AI to analyze symptoms and provide medical triage recommendations.
+                        </p>
+                        <p class="project-description">
+                            <strong>Why I Built It:</strong> To demonstrate end-to-end AI application development, from UI design to cloud deployment, solving a real-world healthcare accessibility problem.
+                        </p>
+                        
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                                <p>Node.js, JavaScript, CSS, Docker, AI APIs, Git, Cloud Services</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-tasks"></i> My Role & Contributions</h4>
+                                <p>Full-stack Developer – Designed UI, integrated AI logic, containerized with Docker, deployed to cloud</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-chart-line"></i> Challenges & Outcomes</h4>
+                                <p>Challenge: Integrating multiple AI APIs for accurate symptom analysis.<br>
+                                Outcome: Created a functional medical triage tool with 95% accuracy in preliminary testing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/MpiloG29/MediScan-AI" class="btn btn-github" target="_blank">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                            <a href="#" class="btn btn-demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Projects -->
+            <div class="projects-grid">
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>📊 Smart Data Manager</h3>
+                    <p class="project-type">Data Engineering Project</p>
+                    <p>ETL pipeline for perfume sales data with cleaning, analysis, and visualization.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>SQLite</span>
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/Lula-App" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>☁️ Multi-Cloud AI Assistant</h3>
+                    <p class="project-type">Cloud Deployment Project</p>
+                    <p>Backend for AI portfolio app deployed across AWS and Azure cloud platforms.</p>
+                    <div class="tech-stack">
+                        <span>Node.js</span>
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>AI APIs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/multi-cloud-app-development" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h3>🤖 AI Assistant Project</h3>
+                    <p class="project-type">AI/LLM Demo</p>
+                    <p>Interactive AI assistant with chat interface and real-time response processing.</p>
+                    <div class="tech-stack">
+                        <span>Node.js</span>
+                        <span>WebSocket</span>
+                        <span>AI APIs</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/AI-Assistant-Project" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <h3>🔄 Business Process Automation</h3>
+                    <p class="project-type">Low-Code Solution</p>
+                    <p>Power App for streamlining manual workflows and business processes.</p>
+                    <div class="tech-stack">
+                        <span>Power Apps</span>
+                        <span>SharePoint</span>
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="disabled">
+                            <i class="fas fa-file-code"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p class="section-subtitle">Let's connect and build something amazing together!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:celimpilog200@gmail.com">celimpilog200@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+27791825118">+27 79 182 5118</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/MpiloG29" target="_blank">github.com/MpiloG29</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/celimpilo-gumede-b5540522b" target="_blank">Celimpilo Gumede</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Johannesburg, South Africa</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-download">
+                    <h3><i class="fas fa-file-download"></i> Download Resume</h3>
+                    <p>Get my complete professional profile in PDF format</p>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Resume (PDF)
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Celimpilo Gumede. All rights reserved.</p>
-        <p>Portfolio built with HTML, CSS, and hosted on GitHub Pages.</p>
+        <div class="container">
+            <p>&copy; 2025 Celimpilo Gumede. All rights reserved.</p>
+            <p>Portfolio built with HTML, CSS, and JavaScript • Hosted on GitHub Pages</p>
+            <p class="footer-links">
+                <a href="#home">Home</a> • 
+                <a href="#about">About</a> • 
+                <a href="#projects">Projects</a> • 
+                <a href="#contact">Contact</a>
+            </p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
