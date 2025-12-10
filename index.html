@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celimpilo Gumede - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .header .title { font-size: 1.5rem; opacity: 0.9; }
+        .header .location { margin-top: 1rem; opacity: 0.8; }
+        
+        /* Sections */
+        .section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Projects */
+        .project {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid #667eea;
+        }
+        
+        .project h3 { color: #333; margin-bottom: 1rem; }
+        .tech-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Contact */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-btn {
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-btn:hover {
+            background: #5a67d8;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .contact-links { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Celimpilo Gumede</h1>
+        <div class="title">Data Engineer | Cloud AI Developer | Mathematics Graduate</div>
+        <div class="location">📍 Johannesburg, South Africa</div>
+    </header>
+
+    <!-- About Me -->
+    <section class="section">
+        <h2>👨‍💻 About Me</h2>
+        <p>I'm a recent BSc Mathematics graduate from the University of KwaZulu-Natal, specializing in Applied Mathematics. I transform complex problems into functional, data-driven systems using Python, AWS/Azure, and modern DevOps tools.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+        <h2>🛠️ Technical Skills</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Azure</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">TensorFlow</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">Power Apps</span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+        <h2>🚀 Featured Projects</h2>
+        
+        <div class="project">
+            <h3>🏥 MediScan AI – AI-Powered Symptom Checker</h3>
+            <p>Containerized web app that uses AI to analyze symptoms and provide triage recommendations.</p>
+            <div style="margin: 1rem 0;">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">AI APIs</span>
+            </div>
+            <a href="https://github.com/MpiloG29/MediScan-AI" class="contact-btn" style="display: inline-block; margin-top: 1rem;">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>📊 Smart Data Manager – Perfume Analytics</h3>
+            <p>Data cleaning, analysis, and visualization pipeline for perfume sales dataset.</p>
+            <div style="margin: 1rem 0;">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">SQLite</span>
+                <span class="tech-badge">Jupyter</span>
+            </div>
+            <a href="https://github.com/MpiloG29/Lula-App" class="contact-btn" style="display: inline-block; margin-top: 1rem;">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>☁️ Multi-Cloud AI Assistant Portfolio</h3>
+            <p>Backend for AI portfolio app deployed across AWS and Azure.</p>
+            <div style="margin: 1rem 0;">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Azure</span>
+                <span class="tech-badge">AI APIs</span>
+            </div>
+            <a href="https://github.com/MpiloG29/multi-cloud-app-development" class="contact-btn" style="display: inline-block; margin-top: 1rem;">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+        <h2>📜 Certifications</h2>
+        <ul style="list-style: none; padding-left: 1rem;">
+            <li>✅ <strong>Data Engineering Mastery</strong> – 92% (Dec 2025)</li>
+            <li>✅ <strong>Cloud & DevOps Engineering</strong> – 78% (Dec 2025)</li>
+            <li>✅ <strong>Foundations of AI</strong> – 74% (Dec 2025)</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+        <h2>📬 Contact Me</h2>
+        <div class="contact-links">
+            <a href="mailto:celimpilog200@gmail.com" class="contact-btn">📧 Email</a>
+            <a href="https://github.com/MpiloG29" class="contact-btn">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/celimpilo-gumede-b5540522b" class="contact-btn">💼 LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Celimpilo Gumede. All rights reserved.</p>
+        <p>Portfolio built with HTML, CSS, and hosted on GitHub Pages.</p>
+    </footer>
+</body>
+</html>
