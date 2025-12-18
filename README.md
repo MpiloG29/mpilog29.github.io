@@ -3,7 +3,7 @@
 This is a professional portfolio website showcasing the skills, projects, and qualifications of Celimpilo Gumede - a Machine Learning & Data Engineering specialist.
 
 ## Live Demo
-[Add your GitHub Pages link here]
+MpiloG29.github.io
 
 ## Features
 - Responsive design optimized for all devices
@@ -72,7 +72,7 @@ This is a professional portfolio website showcasing the skills, projects, and qu
 2. Push all files to the repository
 3. Go to Settings > Pages
 4. Select "main" branch as source
-5. Your site will be published at `https://MpiloG29.github.io/[repository-name]`
+5. Your site will be published at `https://MpiloG29.github.io/`
 
 ## Skills Showcased
 - **Programming:** Python, Java, JavaScript, SQL, Git
