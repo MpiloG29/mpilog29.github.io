@@ -321,6 +321,19 @@
             font-size: 0.9rem;
         }
 
+        .cert-verify {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .cert-verify:hover {
+            text-decoration: underline;
+        }
+
         /* Education */
         .edu-item {
             display: flex;
@@ -473,6 +486,21 @@
         <section id="experience" class="section">
             <h2 class="section-title">Professional Experience</h2>
             
+            <div class="card">
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <span class="exp-title">ML/AI Engineer</span>
+                        <span class="exp-date">Mar 2026 – Present</span>
+                    </div>
+                    <div class="exp-company">TNG Solutions • Johannesburg</div>
+                    <ul class="exp-desc">
+                        <li>Reduced manual reporting time by automating analytics dashboards with AI-driven insights</li>
+                        <li>Improved accuracy of predictive models by 15–20% through feature engineering and hyperparameter tuning</li>
+                        <li>Enabled real-time monitoring of client operations by integrating ML models into live data streams</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="card">
                 <div class="experience-item">
                     <div class="exp-header">
@@ -674,6 +702,70 @@
                         <a href="https://github.com/MpiloG29" target="_blank"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
+
+                <!-- Timestamp Converter -->
+                <div class="project-card">
+                    <h3 class="project-title">Timestamp Converter</h3>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Plotly Dash</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">NumPy</span>
+                    </div>
+                    <p class="project-desc">Production-ready utility transforming raw timestamps into compact 6-character encoded strings with an interactive 8-tab dashboard featuring anomaly detection, trend forecasting, and live streaming mode.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/timestamp-converter-project" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://timestamp-converter-project-1.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Foundry Unified View -->
+                <div class="project-card">
+                    <h3 class="project-title">Foundry Unified View</h3>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Plotly Dash</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">Parquet</span>
+                    </div>
+                    <p class="project-desc">Production analytics dashboard consolidating four manufacturing data streams — production logs, pressure sensors, temperature, and furnace chemistry — into a unified part-level dataset with anomaly detection and quality scoring.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/foundry-unified-view" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://foundry-unified-view-1.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- HealthSync Analytics -->
+                <div class="project-card">
+                    <h3 class="project-title">HealthSync Analytics</h3>
+                    <div class="project-tech">
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Chart.js</span>
+                    </div>
+                    <p class="project-desc">Real-time cardiovascular health monitoring platform with AI-driven risk assessment, digital twin visualization, wearable IoT integration, 30-day admission forecasting, and a multilingual voice assistant across 7 languages.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/healthsync-analytics" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://healthsync-analytics-bhvy.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- VisionGuide -->
+                <div class="project-card">
+                    <h3 class="project-title">VisionGuide</h3>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TensorFlow.js</span>
+                        <span class="tech-badge">Web Speech API</span>
+                        <span class="tech-badge">Leaflet</span>
+                    </div>
+                    <p class="project-desc">AI-powered progressive web app enabling visually impaired individuals to navigate independently using on-device object detection (90+ items), voice-guided GPS routing, traffic light analysis, and emergency SOS with 8-language support.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MpiloG29/VisionGuide" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://mpilog29.github.io/VisionGuide/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -729,6 +821,56 @@
                     <div class="cert-item">
                         <div class="cert-title">Introduction to Generative AI</div>
                         <div class="cert-issuer">Google Cloud • 2025</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Introduction to Data Engineering</div>
+                        <div class="cert-issuer">IBM • Jan 2026</div>
+                        <a href="https://coursera.org/verify/38EWHYLD6GOI" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Introduction to Relational Databases (RDBMS)</div>
+                        <div class="cert-issuer">IBM • Jan 2026</div>
+                        <a href="https://coursera.org/verify/HIN2M1OKESJE" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Python Project for Data Engineering</div>
+                        <div class="cert-issuer">IBM • Jan 2026</div>
+                        <a href="https://coursera.org/verify/TLYURD10KRBB" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Databases and SQL for Data Science with Python</div>
+                        <div class="cert-issuer">IBM • Jan 2026</div>
+                        <a href="https://coursera.org/verify/RSY69SVGS19B" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Hands-on Introduction to Linux Commands and Shell Scripting</div>
+                        <div class="cert-issuer">IBM • Jan 2026</div>
+                        <a href="https://coursera.org/verify/3GXLECT4Z723" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Relational Database Administration (DBA)</div>
+                        <div class="cert-issuer">IBM • Jan 2026</div>
+                        <a href="https://coursera.org/verify/ZU5YXYJ7BE0I" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">BI Dashboards with IBM Cognos Analytics and Google Looker</div>
+                        <div class="cert-issuer">IBM • Feb 2026</div>
+                        <a href="https://coursera.org/verify/LTD9AZSN0UUH" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Introduction to Big Data with Spark and Hadoop</div>
+                        <div class="cert-issuer">IBM • Feb 2026</div>
+                        <a href="https://coursera.org/verify/TWX2XDK3WTA4" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Python for Data Visualization: Matplotlib & Seaborn</div>
+                        <div class="cert-issuer">Coursera • Feb 2026</div>
+                        <a href="https://coursera.org/verify/F182CQPL0EMN" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-title">Python for Data Science, AI & Development</div>
+                        <div class="cert-issuer">IBM • May 2026</div>
+                        <a href="https://coursera.org/verify/OQ0EBRQ8TOMD" target="_blank" class="cert-verify"><i class="fas fa-certificate"></i> Verify</a>
                     </div>
                 </div>
             </div>
